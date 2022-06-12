@@ -4,13 +4,39 @@
  padding: 0;
  box-sizing: border-box
 }
+
+
+h1 {
+  text-align: center;
+  margin: 20px auto;
+}
+
 div>div {
   border: red solid 1px;
   /* width:26px;
   height:26px; */
 }
 
+
+main {
+  display: flex;
+  flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.options-menu {
+  margin: 10px auto;
+  /* width: auto; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+}
+
 #canvas {
+  width: 500px;
+  height: 500px;
   display: grid;
   grid-template-columns: repeat(16,50px) ;
   grid-template-rows: repeat(16,50px);
@@ -18,4 +44,27 @@ div>div {
 
 .color-div {
   background-color: black;
+}
+
+.color-picker {
+  /* width:50px;
+  height: 50px; */
+  border-radius: 50px;
+  cursor: pointer;
+  
+}
+
+.options-menu>label {
+  /* margin-right: 10px; */
+}
+
+footer {
+  background-color: rgb(196, 214, 214);
+  height:50px;
+  width:100%;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
